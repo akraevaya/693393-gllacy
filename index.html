@@ -28,18 +28,32 @@
         <ul class="user-navigation">
           <li>
             <a class="button" href="search.html">
-              <img src="img/loupe.svg" width="17" height="17" alt="Поиск">
+              <img src="img/loupe.svg" width="17" height="17" alt="Поиск по сайту">
             </a>
-            <form>
+            <form class="search" action="https://echo.htmlacademy.ru" method="get">
               <input type="search" name="search-field" placeholder="Что ищем?">
               <input type="submit" name="search-submit" class="visually-hidden">
             </form>
           </li>
           <li>
-            <a class="button" href="enter.html">Вход</a>
-            <!-- Здесь будет форма -->
+            <a class="button" href="enter.html">
+              <img src="img/entrance.svg" width="21" height="19" alt="Вход в личный кабинет">
+              <p>Вход</p>
+            </a>
+            <form class="entrance" action="https://echo.htmlacademy.ru" method="post">
+              <input type="email" name="user-email" placeholder="Электронная почта">
+              <input type="password" name="user-password" placeholder="Пароль">
+              <input type="submit" name="entrance-submit" value="Войти">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </form>
           </li>
-          <li><a class="button" href="basket.html">Корзина</a></li>
+          <li>
+            <a class="button" href="basket.html">
+              <img src="img/basket.svg" width="21" height="20" alt="Корзина">
+              <p>Пусто</p>
+            </a>
+          </li>
         </ul>
         <p class="phones">С 10 до 20, ежедневно<br>
           <a href="tel:88124502525">8 812 450-25-25</a></p>
@@ -155,12 +169,15 @@
 
       <section class="appointment">
         <h2 class="visually-hidden">Рассылка</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!-- Здесь будет форма -->
+        <form class="subscribe" action="https://echo.htmlacademy.ru" method="post">
+          <label for="subscribe-field">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label>
+          <input type="email" name="subscribe" id="subscribe-field" placeholder="Электронная почта">
+          <input type="submit" name="subscribe-submit" value="Отправить">
+        </form>
       </section>
 
       <section class="map">
-        <img src="img/map.jpg" width="1250" height="430" alt="Карта">
+        <img src="img/map.jpg" width="1250" height="430" alt="Главный офис и оффлайн-магазин находятся по адресу Большая Конюшенная 19/8 в Санкт-Петербурге">
         <h2 class="visually-hidden">Контакты</h2>
         <p>
           Адрес главного офиса<br>
@@ -177,21 +194,35 @@
     <footer class="main-footer">
       <div class="social">
         <ul class="social-buttons">
-          <li><a href="#" class="button social-button social-button-twi"></a>Твиттер</li>
-          <li><a href="#" class="button social-button social-button-insta"></a>Инстаграм</li>
-          <li><a href="#" class="button social-button social-button-fb"></a>ФБ</li>
-          <li><a href="#" class="button social-button social-button-vk"></a>ВК</li>
+          <li>
+            <a href="#" class="button social-button social-button-twi">Твиттер</a>
+          </li>
+          <li>
+            <a href="#" class="button social-button social-button-insta">Инстаграм</a>
+          </li>
+          <li>
+            <a href="#" class="button social-button social-button-fb">ФБ</a>
+          </li>
+          <li>
+            <a href="#" class="button social-button social-button-vk">ВК</a>
+          </li>
         </ul>
       </div>
       <div class="footer-menu">
         <ul class="footer-menu-items">
           <li>
-            <img src="img/heart.svg" width="15" height="13" alt="Сердце">
+            <img src="img/heart.svg" width="15" height="13" alt="Для наших любимых поставщиков">
             <a class="footer-menu-item" href="#">Для поставщиков</a>
           </li>
-          <li><a class="footer-menu-item" href="#">О производстве</a></li>
-          <li><a class="footer-menu-item" href="#">Наши документы</a></li>
-          <li><a class="footer-menu-item" href="#">Экологические стандарты</a></li>
+          <li>
+            <a class="footer-menu-item" href="#">О производстве</a>
+          </li>
+          <li>
+            <a class="footer-menu-item" href="#">Наши документы</a>
+          </li>
+          <li>
+            <a class="footer-menu-item" href="#">Экологические стандарты</a>
+          </li>
         </ul>
       </div>
       <div class="footer-copyright">
@@ -201,11 +232,17 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
       </div>
     </footer>
+
     <section class="modal">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <p>Мы обязательно вам ответим!</p>
-      <span class="modal-close">x</span>
-      <!-- Здесь будет форма -->
+      <b>Мы обязательно вам ответим!</b>
+      <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+        <img src="img/cross-big.svg" width="18" height="17" alt="Закрыть форму обратной связи">
+        <input type="text" name="user-name" placeholder="Как вас зовут?">
+        <input type="email" name="user-email" placeholder="Ваша почта для ответа?">
+        <textarea name="message">Напишите что-нибудь...</textarea>
+        <input type="submit" name="feedback-submit">
+      </form>
     </section>
   </body>
 </html>

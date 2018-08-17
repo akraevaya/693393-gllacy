@@ -27,15 +27,32 @@
         </nav>
         <ul class="user-navigation">
             <li>
-                <a class="button" href="search.html">Поиск</a>
-                <!-- Здесь будет форма -->
+                <a class="button" href="search.html">
+                    <img src="img/loupe.svg" width="17" height="17" alt="Поиск по сайту">
+                </a>
+                <form class="search" action="https://echo.htmlacademy.ru" method="get">
+                    <input type="search" name="search-field" placeholder="Что ищем?">
+                    <input type="submit" name="search-submit" class="visually-hidden">
+                </form>
             </li>
             <li>
-                <a class="button" href="enter.html">Вход</a>
-                <!-- Здесь будет форма -->
+                <a class="button" href="enter.html">
+                    <img src="img/entrance.svg" width="21" height="19" alt="Вход в личный кабинет">
+                    <p>Вход</p>
+                </a>
+                <form class="entrance" action="https://echo.htmlacademy.ru" method="post">
+                    <input type="email" name="user-email" placeholder="Электронная почта">
+                    <input type="password" name="user-password" placeholder="Пароль">
+                    <input type="submit" name="entrance-submit" value="Войти">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                </form>
             </li>
             <li>
-                <a class="button" href="basket.html">Корзина</a>
+                <a class="button" href="basket.html">
+                    <img src="img/basket-red.svg" width="21" height="20" alt="Корзина">
+                    <p>2 товара</p>
+                </a>
                 <table class="basket-drop-down">
                     <tr>
                         <td><img src="img/cross-small.svg" width="11" height="11" alt="Удалить товар"></td>
@@ -54,7 +71,7 @@
                 </table>
                 <hr>
                 <p>Итого: 750 руб.</p>
-                <a href="#">Оформить заказ</a>
+                <a class="button" href="#">Оформить заказ</a>
             </li>
         </ul>
         <p class="phones">С 10 до 20, ежедневно<br>
@@ -71,7 +88,37 @@
 
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!-- Здесь будет форма -->
+            <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+                <fieldset class="sorting">
+                    <legend>Сортировка:</legend>
+                    <select name="sort" id="sorting">
+                        <option value="popular" selected>по популярности</option>
+                        <option value="cheap">сначала недорогие</option>
+                        <option value="expensive">сначала дорогие</option>
+                        <option value="fat">по жирности</option>
+                    </select>
+                </fieldset>
+                <fieldset class="price">
+                    <legend>Цена: 100 руб. &mdash; 500 руб.</legend>
+                    <input type="range" name="ice-cream-price" min="100" max="500" step="10">
+                </fieldset>
+                <fieldset class="fat-content">
+                    <legend>Жирность:</legend>
+                    <label><input type="radio" name="fat-content-option" value="0">0%</label>
+                    <label><input type="radio" name="fat-content-option" value="under-10" checked>до 10%</label>
+                    <label><input type="radio" name="fat-content-option" value="under-30">до 30%</label>
+                    <label><input type="radio" name="fat-content-option" value="over-30">выше 30%</label>
+                </fieldset>
+                <fieldset class="filler">
+                    <legend>Наполнители:</legend>
+                    <label><input type="checkbox" name="chocolate" checked>шоколадные</label>
+                    <label><input type="checkbox" name="sugar" checked>сахарные присыпки</label>
+                    <label><input type="checkbox" name="fruit">фрукты</label>
+                    <label><input type="checkbox" name="syrup">сиропы</label>
+                    <label><input type="checkbox" name="jam">джемы</label>
+                </fieldset>
+                <input type="submit" name="filter-submit" value="Применить">
+            </form>
         </section>
 
         <section class="catalog">
@@ -163,13 +210,13 @@
                 </li>
             </ul>
             <ul class="pagination-list">
-                <li class="pagination-item-prev"><a href="#"></a>Назад</li>
+                <li class="pagination-item-prev"><a href="#">Назад</a></li>
                 <li class="pagination-item pagination-item-current"><a>1</a></li>
                 <li class="pagination-item"><a href="#">2</a></li>
                 <li class="pagination-item"><a href="#">3</a></li>
                 <li class="pagination-item"><a href="#">4</a></li>
                 <li class="pagination-item"><a href="#">5</a></li>
-                <li class="pagination-item-next"><a href="#"></a>Вперёд</li>
+                <li class="pagination-item-next"><a href="#">Вперёд</a></li>
             </ul>
         </section>
     </main>
@@ -177,21 +224,35 @@
     <footer class="main-footer">
         <div class="social">
             <ul class="social-buttons">
-                <li><a href="#" class="button social-button social-button-twi"></a>Твиттер</li>
-                <li><a href="#" class="button social-button social-button-insta"></a>Инстаграм</li>
-                <li><a href="#" class="button social-button social-button-fb"></a>ФБ</li>
-                <li><a href="#" class="button social-button social-button-vk"></a>ВК</li>
+                <li>
+                    <a href="#" class="button social-button social-button-twi">Твиттер</a>
+                </li>
+                <li>
+                    <a href="#" class="button social-button social-button-insta">Инстаграм</a>
+                </li>
+                <li>
+                    <a href="#" class="button social-button social-button-fb">ФБ</a>
+                </li>
+                <li>
+                    <a href="#" class="button social-button social-button-vk">ВК</a>
+                </li>
             </ul>
         </div>
         <div class="footer-menu">
             <ul class="footer-menu-items">
                 <li>
-                    <img src="img/heart.svg" width="15" height="13" alt="Сердце">
+                    <img src="img/heart.svg" width="15" height="13" alt="Для наших любимых поставщиков">
                     <a class="footer-menu-item" href="#">Для поставщиков</a>
                 </li>
-                <li><a class="footer-menu-item" href="#">О производстве</a></li>
-                <li><a class="footer-menu-item" href="#">Наши документы</a></li>
-                <li><a class="footer-menu-item" href="#">Экологические стандарты</a></li>
+                <li>
+                    <a class="footer-menu-item" href="#">О производстве</a>
+                </li>
+                <li>
+                    <a class="footer-menu-item" href="#">Наши документы</a>
+                </li>
+                <li>
+                    <a class="footer-menu-item" href="#">Экологические стандарты</a>
+                </li>
             </ul>
         </div>
         <div class="footer-copyright">
