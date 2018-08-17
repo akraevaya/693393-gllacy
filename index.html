@@ -27,8 +27,15 @@
       </nav>
         <ul class="user-navigation">
           <li>
-            <label for="search-field"><img src="img/loupe.svg" width="17" height="17">Поиск</label>
-            <input type="search" name="search" id="search-field" class="visually-hidden" placeholder="Что ищем?">
+            <form>
+              <label for="search-field">
+                <a class="button" href="search.html">
+                  <img src="img/loupe.svg" width="17" height="17">
+                </a>Поиск
+              </label>
+              <input type="search" name="search" id="search-field" placeholder="Что ищем?">
+              <input type="submit" name="search" class="visually-hidden">
+            </form>
           </li>
           <li>
             <a class="button" href="enter.html">Вход</a>
