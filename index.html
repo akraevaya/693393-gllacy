@@ -30,17 +30,17 @@
             <a class="button" href="search.html">
               <img src="img/loupe.svg" width="17" height="17" alt="Поиск по сайту">
             </a>
-            <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
               <input type="search" name="search-field" placeholder="Что ищем?">
-              <input type="submit" name="search-submit" class="visually-hidden">
+              <input type="submit" class="visually-hidden">
             </form>
           </li>
           <li>
             <a class="button" href="enter.html">
               <img src="img/entrance.svg" width="21" height="19" alt="Вход в личный кабинет">
-              <p>Вход</p>
+              <span>Вход</span>
             </a>
-            <form class="entrance" action="https://echo.htmlacademy.ru" method="post">
+            <form class="entrance-form" action="https://echo.htmlacademy.ru" method="post">
               <input type="email" name="user-email" placeholder="Электронная почта">
               <input type="password" name="user-password" placeholder="Пароль">
               <input type="submit" name="entrance-submit" value="Войти">
@@ -51,7 +51,7 @@
           <li>
             <a class="button" href="basket.html">
               <img src="img/basket.svg" width="21" height="20" alt="Корзина">
-              <p>Пусто</p>
+              <span>Пусто</span>
             </a>
           </li>
         </ul>
@@ -61,27 +61,35 @@
 
     <main class="container">
       <h1 class="visually-hidden">Магазин мороженого Gllacy</h1>
-      <section class="action">
-        <h2 class="visually-hidden">Два по цене одного</h2>
-        <ul class="action-items">
-          <li class="action-item">
-            <img src="img/ice-cream-1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
-            <h3>Крем-брюле и пломбир с малиновым джемом</h3>
-            <a class="button" href="#">Давайте оба!</a>
-          </li>
-          <li class="action-item">
-            <img src="img/ice-cream-2.png" width="647" height="584" alt="Шоколадный пломбир и лимонный сорбет">
-            <h3>Шоколадный пломбир и лимонный сорбет</h3>
-            <a class="button" href="#">Давайте оба!</a>
-          </li>
-          <li class="action-item">
-            <img src="img/ice-cream-3.png" width="647" height="584" alt="Пломбир с помадкой и клубничный щербет">
-            <h3>Пломбир с помадкой и клубничный щербет</h3>
-            <a class="button" href="#">Давайте оба!</a>
-          </li>
-        </ul>
-        <div class="thumb">
-          <!-- Здесь будет навигация -->
+
+      <section class="thumb">
+        <div class="thumb-inner">
+          <h2 class="visually-hidden">Два по цене одного</h2>
+          <ul class="thumb-inner-list">
+            <li class="thumb-item">
+              <img src="img/ice-cream-1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+              <h3>Крем-брюле и пломбир с малиновым джемом</h3>
+              <a class="button" href="#"><span>Давайте оба!</span></a>
+            </li>
+            <li class="thumb-item">
+              <img src="img/ice-cream-2.png" width="647" height="584" alt="Шоколадный пломбир и лимонный сорбет">
+              <h3>Шоколадный пломбир и лимонный сорбет</h3>
+              <a class="button" href="#"><span>Давайте оба!</span></a>
+            </li>
+            <li class="thumb-item">
+              <img src="img/ice-cream-3.png" width="647" height="584" alt="Пломбир с помадкой и клубничный щербет">
+              <h3>Пломбир с помадкой и клубничный щербет</h3>
+              <a class="button" href="#"><span>Давайте оба!</span></a>
+            </li>
+          </ul>
+        </div>
+        <input type="radio" name="toggle" id="btn-1" checked>
+        <input type="radio" name="toggle" id="btn-1">
+        <input type="radio" name="toggle" id="btn-1">
+        <div class="thumb-controls">
+          <label for="btn-1"></label>
+          <label for="btn-1"></label>
+          <label for="btn-1"></label>
         </div>
       </section>
 
@@ -167,9 +175,9 @@
         <h3 class="news-item"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
       </section>
 
-      <section class="appointment">
+      <section class="subscribe">
         <h2 class="visually-hidden">Рассылка</h2>
-        <form class="subscribe" action="https://echo.htmlacademy.ru" method="post">
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <label for="subscribe-field">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label>
           <input type="email" name="subscribe" id="subscribe-field" placeholder="Электронная почта">
           <input type="submit" name="subscribe-submit" value="Отправить">
@@ -236,7 +244,7 @@
     <section class="modal">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <b>Мы обязательно вам ответим!</b>
-      <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <img src="img/cross-big.svg" width="18" height="17" alt="Закрыть форму обратной связи">
         <input type="text" name="user-name" placeholder="Как вас зовут?">
         <input type="email" name="user-email" placeholder="Ваша почта для ответа?">

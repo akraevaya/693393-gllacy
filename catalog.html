@@ -30,17 +30,17 @@
                 <a class="button" href="search.html">
                     <img src="img/loupe.svg" width="17" height="17" alt="Поиск по сайту">
                 </a>
-                <form class="search" action="https://echo.htmlacademy.ru" method="get">
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                     <input type="search" name="search-field" placeholder="Что ищем?">
-                    <input type="submit" name="search-submit" class="visually-hidden">
+                    <input type="submit" class="visually-hidden">
                 </form>
             </li>
             <li>
                 <a class="button" href="enter.html">
                     <img src="img/entrance.svg" width="21" height="19" alt="Вход в личный кабинет">
-                    <p>Вход</p>
+                    <span>Вход</span>
                 </a>
-                <form class="entrance" action="https://echo.htmlacademy.ru" method="post">
+                <form class="entrance-form" action="https://echo.htmlacademy.ru" method="post">
                     <input type="email" name="user-email" placeholder="Электронная почта">
                     <input type="password" name="user-password" placeholder="Пароль">
                     <input type="submit" name="entrance-submit" value="Войти">
@@ -51,7 +51,7 @@
             <li>
                 <a class="button" href="basket.html">
                     <img src="img/basket-red.svg" width="21" height="20" alt="Корзина">
-                    <p>2 товара</p>
+                    <span>2 товара</span>
                 </a>
                 <table class="basket-drop-down">
                     <tr>
@@ -70,7 +70,7 @@
                     </tr>
                 </table>
                 <hr>
-                <p>Итого: 750 руб.</p>
+                <span>Итого: 750 руб.</span>
                 <a class="button" href="#">Оформить заказ</a>
             </li>
         </ul>
@@ -89,35 +89,46 @@
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
-                <fieldset class="sorting">
-                    <legend>Сортировка:</legend>
-                    <select name="sort" id="sorting">
-                        <option value="popular" selected>по популярности</option>
-                        <option value="cheap">сначала недорогие</option>
-                        <option value="expensive">сначала дорогие</option>
-                        <option value="fat">по жирности</option>
-                    </select>
-                </fieldset>
-                <fieldset class="price">
-                    <legend>Цена: 100 руб. &mdash; 500 руб.</legend>
-                    <input type="range" name="ice-cream-price" min="100" max="500" step="10">
-                </fieldset>
+
+                <label for="sorting"><span class="filter-name">Сортировка:</span></label>
+                <select name="sort" id="sorting">
+                    <option value="popular" selected>по популярности</option>
+                    <option value="cheap">сначала недорогие</option>
+                    <option value="expensive">сначала дорогие</option>
+                    <option value="fat">по жирности</option>
+                </select>
+                
+                <span class="filter-name">Цена: 100 руб. &mdash; 500 руб.</span>
+                <div class="range-controls">
+                    <span class="scale"></span> 
+                    <span class="bar"></span>
+                    <span class="toggle min-toggle">
+                        <img src="img/filter-button.svg" width="20" height="22" alt="Минимально возможная цена">
+                    </span>
+                    <span class="toggle max-toggle">
+                        <img src="img/filter-button.svg" width="20" height="22" alt="Максимально возможная цена">
+                    </span>
+                </div>
+                    
                 <fieldset class="fat-content">
-                    <legend>Жирность:</legend>
+                    <legend><span class="filter-name">Жирность:</span></legend>
                     <label><input type="radio" name="fat-content-option" value="0">0%</label>
                     <label><input type="radio" name="fat-content-option" value="under-10" checked>до 10%</label>
                     <label><input type="radio" name="fat-content-option" value="under-30">до 30%</label>
                     <label><input type="radio" name="fat-content-option" value="over-30">выше 30%</label>
                 </fieldset>
+
                 <fieldset class="filler">
-                    <legend>Наполнители:</legend>
+                    <legend><span class="filter-name">Наполнители:</span></legend>
                     <label><input type="checkbox" name="chocolate" checked>шоколадные</label>
                     <label><input type="checkbox" name="sugar" checked>сахарные присыпки</label>
                     <label><input type="checkbox" name="fruit">фрукты</label>
                     <label><input type="checkbox" name="syrup">сиропы</label>
                     <label><input type="checkbox" name="jam">джемы</label>
                 </fieldset>
+
                 <input type="submit" name="filter-submit" value="Применить">
+
             </form>
         </section>
 
