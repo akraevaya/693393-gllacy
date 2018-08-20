@@ -90,7 +90,7 @@
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
 
-                <label for="sorting"><span class="filter-name">Сортировка:</span></label>
+                <label for="sorting" class="filter-name">Сортировка:</label>
                 <select name="sort" id="sorting">
                     <option value="popular" selected>по популярности</option>
                     <option value="cheap">сначала недорогие</option>
@@ -102,16 +102,12 @@
                 <div class="range-controls">
                     <span class="scale"></span> 
                     <span class="bar"></span>
-                    <span class="toggle min-toggle">
-                        <img src="img/filter-button.svg" width="20" height="22" alt="Минимально возможная цена">
-                    </span>
-                    <span class="toggle max-toggle">
-                        <img src="img/filter-button.svg" width="20" height="22" alt="Максимально возможная цена">
-                    </span>
+                    <span class="toggle min-toggle"></span>
+                    <span class="toggle max-toggle"></span>
                 </div>
                     
                 <fieldset class="fat-content">
-                    <legend><span class="filter-name">Жирность:</span></legend>
+                    <legend class="filter-name">Жирность:</legend>
                     <label><input type="radio" name="fat-content-option" value="0">0%</label>
                     <label><input type="radio" name="fat-content-option" value="under-10" checked>до 10%</label>
                     <label><input type="radio" name="fat-content-option" value="under-30">до 30%</label>
@@ -119,7 +115,7 @@
                 </fieldset>
 
                 <fieldset class="filler">
-                    <legend><span class="filter-name">Наполнители:</span></legend>
+                    <legend class="filter-name">Наполнители:</legend>
                     <label><input type="checkbox" name="chocolate" checked>шоколадные</label>
                     <label><input type="checkbox" name="sugar" checked>сахарные присыпки</label>
                     <label><input type="checkbox" name="fruit">фрукты</label>
