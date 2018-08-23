@@ -81,10 +81,10 @@ body {
     color: #e84d37;
 }
 
-.entrance-form input[type="submit"] {
+.entrance-button {
     font-size: 18px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: bold;
     color: #ffffff;
     background-color: #ec573b;
 }
@@ -152,13 +152,13 @@ body {
     color: #ffffff;
 }
 
-.filters-form option {
+.filters-form select {
     font-size: 14px;
     line-height: 16px;
     font-weight: medium;
 }
 
-.filters-form input[type="submit"] {
+.filters-button {
     font-size: 16px;
     line-height: 18px;
     font-weight: medium;
@@ -171,27 +171,24 @@ body {
 .site-navigation,
 .user-navigation,
 .sub-menu,
-.slider-inner-list,
+.slider-list,
 .breadcrumbs,
-.catalog-list {
-    list-style: none;
-}
-
-.slider ul {
+.catalog-list,
+.gifts ul,
+.catalog ul,
+.features ul,
+.main-footer ul {
     list-style: none;
 }
 
 .slider h3 {
     font-size: 60px;
     line-height: 60,35px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .slider-list a {
     text-decoration: none;
-}
-
-.slider-list span {
     font-size: 32px;
     line-height: 44px;
     color: #ffffff;
@@ -199,26 +196,22 @@ body {
     border-radius: 50px;
 }
 
-.gifts ul {
-    list-style: none;
-}
-
 .gift-item h3 {
     font-size: 35px;
     line-height: 41px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .gift-item p {
     font-size: 18px;
     line-height: 22px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .gift-item a {
     font-size: 18px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: bold;
     color: #ffffff;
     text-decoration: none;
     background-color: #ec573b;
@@ -239,10 +232,6 @@ body {
 .gift-item:last-child {
     background-color: #664b43;
     background-image: url("img/choco-back.png");
-}
-
-.catalog ul {
-    list-style: none;
 }
 
 .catalog-item h3 {
@@ -267,8 +256,7 @@ body {
 }
 
 .catalog-item span {
-    font-size: 28px; 
-    /* в макете нет этого размера, как и font-size для цены, т.е. для .catalog-item p. Есть только line-height для всей этой конструкции <p>415 ₽<span>/кг</span></p> */
+    font-size: 28px;
 }
 
 .pagination-item a {
@@ -301,15 +289,10 @@ body {
     font-weight: medium;
 }
 
-.features ul {
-    list-style: none;
-    column-count: 2;
-}
-
 .feature-item p {
     font-size: 16px;
     line-height: 22px;
-    font-weight: 400;
+    font-weight: normal;
 }
 
 .news {
@@ -326,7 +309,7 @@ body {
 .news h3 {
     font-size: 24px;
     line-height: 30px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .news a {
@@ -346,14 +329,14 @@ body {
 .subscribe label {
     font-size: 16px;
     line-height: 22px;
-    font-weight: 400;
+    font-weight: normal;
     color: #5a5a5a;
 }
 
-.subscribe input[type="submit"] {
+.subscribe-button {
     font-size: 18px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: bold;
     color: #ffffff;
     background-color: #ec573b;
 }
@@ -361,20 +344,20 @@ body {
 .map p {
     font-size: 14px;
     line-height: 20px;
-    font-weight: 400;
+    font-weight: normal;
     color: #323232;
 }
 
 .address {
     font-size: 18px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .map a {
     font-size: 18px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: bold;
     text-decoration: none;
     color: #323232;
 }
@@ -383,10 +366,6 @@ body {
 .map a:active,
 .map a:focus {
     color: #e84d37;
-}
-
-.main-footer ul {
-    list-style: none;
 }
 
 .social-buttons a {
@@ -409,7 +388,7 @@ body {
     color: #ffbc9e;
 }
 
-.footer-menu-list a:first-child {
+.footer-menu-list li:first-child a {
     font-weight: bold; 
 }
 
@@ -443,10 +422,11 @@ body {
     color: #323232;
 }
 
-.feedback-form input[type="submit"] {
+.feedback-button {
     font-size: 18px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: bold;
+    border-radius: 50px;
     color: #ffffff;
     background-color: #ec573b;
 }
