@@ -1,0 +1,454 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #ffffff;
+    background-color: #9aafa3;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #9aafa3;
+}
+
+.main-navigation a {
+    color: #ffffff;
+}
+
+.sub-menu {
+    font-size: 14px;
+    line-height: 16px;
+    background-color: #f8f7f4;
+}
+
+.sub-menu li:not(:first-child) {
+    font-weight: normal;
+}
+
+.sub-menu-item a {
+    text-decoration: none;
+    color: #323232;
+}
+
+.sub-menu-item a:hover,
+.sub-menu-item a:active,
+.sub-menu-item a:focus {
+    color: #e84d37;
+}
+
+.active-sub-menu a:hover {
+    color: #323232;
+    background-color: #fbded7;
+}
+
+.active-sub-menu a:active {
+    color: #323232;
+    background-color: #f6b5a5;
+}
+
+.active-sub-menu a:visited {
+    background-color: #d07058;
+}
+
+
+.user-navigation a {
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.entrance-icon {
+    fill: #ffffff;
+}
+
+.entrance-form a {
+    font-size: 13px;
+    line-height: 24px;
+    color: #323232;
+    text-decoration: underline;
+}
+
+.entrance-form a:hover,
+.entrance-form a:active,
+.entrance-form a:focus {
+    color: #e84d37;
+}
+
+.entrance-form input[type="submit"] {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #ec573b;
+}
+.basket {
+    background-color: #f8f7f4;
+}
+
+.basket-drop-down td {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #323232;
+}
+
+.basket span {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #323232;
+}
+
+.basket .buy {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #fefefe;
+    background-color: #e84e37;
+    border-radius: 50px;
+}
+
+.phones {
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+.phones a {
+    font-size: 22px;
+    line-height: 24px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.phones a:hover,
+.phones a:active,
+.phones a:focus {
+    color: #ffbc9e;
+}
+
+.breadcrumbs {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.breadcrumbs a {
+    color: #ffffff;
+}
+
+.filter-name {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: medium;
+    color: #ffffff;
+}
+
+.filters-form option {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: medium;
+}
+
+.filters-form input[type="submit"] {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: medium;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.site-navigation,
+.user-navigation,
+.sub-menu,
+.slider-inner-list,
+.breadcrumbs,
+.catalog-list {
+    list-style: none;
+}
+
+.slider ul {
+    list-style: none;
+}
+
+.slider h3 {
+    font-size: 60px;
+    line-height: 60,35px;
+    font-weight: 700;
+}
+
+.slider-list a {
+    text-decoration: none;
+}
+
+.slider-list span {
+    font-size: 32px;
+    line-height: 44px;
+    color: #ffffff;
+    background-color: #ec573b;
+    border-radius: 50px;
+}
+
+.gifts ul {
+    list-style: none;
+}
+
+.gift-item h3 {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: 700;
+}
+
+.gift-item p {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.gift-item a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #ec573b;
+    border-radius: 50px;
+}
+
+.gift-item a:hover,
+.gift-item a:active,
+.gift-item a:focus {
+    color: #ffbc9e;
+}
+
+.gift-item:first-child {
+    background-color: #9a0115;
+    background-image: url("img/raspberry-back.png");
+}
+
+.gift-item:last-child {
+    background-color: #664b43;
+    background-image: url("img/choco-back.png");
+}
+
+.catalog ul {
+    list-style: none;
+}
+
+.catalog-item h3 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: medium;
+}
+
+.catalog-item a {
+    color: #ffffff;
+}
+
+.catalog-item a:hover,
+.catalog-item a:active,
+.catalog-item a:focus {
+    color: #ffbc9e;
+}
+
+.catalog-item p {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.catalog-item span {
+    font-size: 28px; 
+    /* в макете нет этого размера, как и font-size для цены, т.е. для .catalog-item p. Есть только line-height для всей этой конструкции <p>415 ₽<span>/кг</span></p> */
+}
+
+.pagination-item a {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: medium;
+    color: #ffffff;
+}
+
+.pagination-item-current a {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: medium;
+    color: #323232;
+}
+
+.pagination-item-prev,
+.pagination-item-next {
+    font-size: 0;
+}
+
+.features {
+    color: #323232;
+    background-color: #f0e5cf;
+}
+
+.features p {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: medium;
+}
+
+.features ul {
+    list-style: none;
+    column-count: 2;
+}
+
+.feature-item p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.news {
+    background-color: #ffffff;
+}
+
+.news h2 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: medium;
+    color: #323232;
+}
+
+.news h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.news a {
+    color: #323232;
+}
+
+.news a:hover,
+.news a:active,
+.news a:focus {
+    color: #e84d37;
+}
+
+.subscribe {
+    background-color: #f8f7f4;
+}
+
+.subscribe label {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #5a5a5a;
+}
+
+.subscribe input[type="submit"] {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #ec573b;
+}
+
+.map p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #323232;
+}
+
+.address {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.map a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #323232;
+}
+
+.map a:hover,
+.map a:active,
+.map a:focus {
+    color: #e84d37;
+}
+
+.main-footer ul {
+    list-style: none;
+}
+
+.social-buttons a {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff; 
+}
+
+.footer-menu-list a {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.footer-menu-list a:hover,
+.footer-menu-list a:active,
+.footer-menu-list a:focus {
+    color: #ffbc9e;
+}
+
+.footer-menu-list a:first-child {
+    font-weight: bold; 
+}
+
+.footer-copyright p {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.footer-copyright a {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:active,
+.footer-copyright a:focus {
+    color: #ffbc9e;
+}
+
+.modal {
+    background-color: #f8f7f4;
+}
+
+.modal p {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: medium;
+    color: #323232;
+}
+
+.feedback-form input[type="submit"] {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #ec573b;
+}
+
+
