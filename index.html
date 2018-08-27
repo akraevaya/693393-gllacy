@@ -9,6 +9,7 @@
   </head>
   <body>
     <header class="main-header">
+    <div class="container">
       <nav class="main-navigation">
         <a class="main-header-logo">
           <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Gllacy">
@@ -49,7 +50,7 @@
             <form class="entrance-form" action="https://echo.htmlacademy.ru" method="post">
               <input type="email" name="user-email" placeholder="Электронная почта">
               <input type="password" name="user-password" placeholder="Пароль">
-              <input class="entrance-button" type="submit" name="entrance-submit" value="Войти">
+              <input class="red-button" type="submit" name="entrance-submit" value="Войти">
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </form>
@@ -61,8 +62,12 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="container">
         <p class="phones">С 10 до 20, ежедневно<br>
-          <a href="tel:88124502525">8 812 450-25-25</a></p>
+          <a href="tel:88124502525">8 812 450-25-25</a>
+        </p>
+      </div>
     </header>
 
     <main class="container">
@@ -75,17 +80,17 @@
             <li class="slider-item">
               <img src="img/ice-cream-1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
               <h3>Крем-брюле и пломбир с малиновым джемом</h3>
-              <a class="button" href="#"><span>Давайте оба!</span></a>
+              <a class="button red-button" href="#"><span>Давайте оба!</span></a>
             </li>
             <li class="slider-item">
               <img src="img/ice-cream-2.png" width="647" height="584" alt="Шоколадный пломбир и лимонный сорбет">
               <h3>Шоколадный пломбир и лимонный сорбет</h3>
-              <a class="button" href="#"><span>Давайте оба!</span></a>
+              <a class="button red-button" href="#"><span>Давайте оба!</span></a>
             </li>
             <li class="slider-item">
               <img src="img/ice-cream-3.png" width="647" height="584" alt="Пломбир с помадкой и клубничный щербет">
               <h3>Пломбир с помадкой и клубничный щербет</h3>
-              <a class="button" href="#"><span>Давайте оба!</span></a>
+              <a class="button red-button" href="#"><span>Давайте оба!</span></a>
             </li>
           </ul>
         </div>
@@ -101,22 +106,25 @@
 
       <section class="gifts">
         <h2 class="visually-hidden">Подарки</h2>
-        <ul class="gift-items">
+        <div class="container">
+        <ul class="gift-list">
           <li class="gift-item">
             <h3>Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a class="button" href="#">Хочу варенье!</a>
+            <a class="button red-button" href="#">Хочу варенье!</a>
           </li>
           <li class="gift-item">
               <h3>Шоколадки даром!</h3>
               <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-              <a class="button" href="#">Хочу шоколадки! </a>
+              <a class="button red-button" href="#">Хочу шоколадки! </a>
           </li>
         </ul>
+        </div>
       </section>
 
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
+        <div class="container">
         <ul class="catalog-list">
           <li class="catalog-item">
             <img src="img/hit.svg" width="26" height="31" alt="Хит">
@@ -151,12 +159,14 @@
             </h3>  
           </li>
         </ul>
+        </div>
       </section>
 
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <p>Магазин Глэйси &mdash; это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-        <ul class="feature-items">
+        <div class="container">
+        <ul class="features-list">
           <li class="feature-item">
             <img src="img/ice-cream.svg" width="49" height="49" alt="Мороженое">
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -174,8 +184,10 @@
               <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не даёт мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
+        </div>
       </section>
 
+    <div class="container news-subscribe">
       <section class="news">
         <h2>Новое в нашем блоге</h2>
         <h3 class="news-item"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
@@ -186,26 +198,28 @@
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <label for="subscribe-field">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label>
           <input type="email" name="subscribe" id="subscribe-field" placeholder="Электронная почта">
-          <input class="subscribe-button" type="submit" name="subscribe-submit" value="Отправить">
+          <input class="red-button" type="submit" name="subscribe-submit" value="Отправить">
         </form>
       </section>
+    </div>
 
       <section class="map">
         <img src="img/map.jpg" width="1250" height="430" alt="Главный офис и оффлайн-магазин находятся по адресу Большая Конюшенная 19/8 в Санкт-Петербурге">
         <h2 class="visually-hidden">Контакты</h2>
-        <p>
+        <p class="contacts">
           Адрес главного офиса<br>
           и офлайн-магазина:<br>
             <span class="address">ул. Большая Конюшенная<br>
             19/8, Санкт-Петербург</span><br>
             Для заказов по телефону:<br>
             <span class="phones"><a href="tel:88124502525">8 812 450-25-25</a></span><br>
-            (с 10 до 20 ежедневно) 
+            (с 10 до 20 ежедневно)<br>
+            <a class="button red-button" href="#modal">Форма обратной связи</a>
         </p>
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="social">
         <ul class="social-buttons">
           <li>
@@ -255,7 +269,7 @@
         <input type="text" name="user-name" placeholder="Как вас зовут?">
         <input type="email" name="user-email" placeholder="Ваша почта для ответа?">
         <textarea name="message" placeholder="Напишите что-нибудь..."></textarea>
-        <input class="feedback-button" type="submit" name="feedback-submit">
+        <input class="red-button" type="submit" name="feedback-submit">
       </form>
     </section>
   </body>
