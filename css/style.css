@@ -1,7 +1,6 @@
 html,
 body {
     min-width: 1200px;
-    min-height: 2416px;
 }
 
 body {
@@ -13,6 +12,16 @@ body {
     font-weight: normal;
     color: #ffffff;
     background-color: #9aafa3;
+}
+
+.red-button {
+    padding: 10px 15px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #ec573b;
 }
 
 .container {
@@ -154,7 +163,7 @@ body {
     text-decoration: none;
 }
 
-.map .phones a {
+.phones .phones-map {
     color: #323232;
 }
 
@@ -549,14 +558,5 @@ body {
     color: #323232;
 }
 
-.red-button {
-    padding: 10px 15px;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: bold;
-    border-radius: 50px;
-    color: #ffffff;
-    background-color: #ec573b;
-}
 
 
