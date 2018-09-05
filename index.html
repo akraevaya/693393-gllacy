@@ -11,16 +11,16 @@
     <header class="main-header container">
       <div class="container">
         <nav class="main-navigation">
-          <!-- <a class="main-header-logo"> -->
+          <a class="main-header-logo">
             <img class="main-header-logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Gllacy">
-          <!-- </a> -->
+          </a>
           <ul class="site-navigation">
             <li class="menu menu-popup-link">
               <a href="#">Каталог</a>
               <ul class="sub-menu menu-popup">
                 <li class="sub-menu-item"><a href="#">Новинки</a></li>
                 <li class="sub-menu-item"><a href="catalog.html">Сливочное</a></li>
-                <li class="sub-menu-item active-sub-menu"><a href="#">Щербеты</a></li>
+                <li class="sub-menu-item"><a href="#">Щербеты</a></li>
                 <li class="sub-menu-item"><a href="#">Фруктовый лед</a></li>
                 <li class="sub-menu-item"><a href="#">Мелорин</a></li>
               </ul>
@@ -41,15 +41,15 @@
             <a class="button" href="enter.html">Вход</a>
             <form class="entrance-form menu-popup" action="https://echo.htmlacademy.ru" method="post">
               <div class="entrance-wrapper">
-              <input class="input-field" type="email" name="user-email" placeholder="Электронная почта">
-              <input class="input-field" type="password" name="user-password" placeholder="Пароль">
-              <div class="entrance-footer">
-                <input class="red-button" type="submit" name="entrance-submit" value="Войти">
-                <div class="entrance-footer-help">
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
+                <input class="input-field" type="email" name="user-email" placeholder="Электронная почта">
+                <input class="input-field" type="password" name="user-password" placeholder="Пароль">
+                <div class="entrance-footer">
+                  <input class="red-button" type="submit" name="entrance-submit" value="Войти">
+                  <div class="entrance-footer-help">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
                 </div>
-              </div>
               </div>
             </form>
           </li>
@@ -197,16 +197,14 @@
         <img class="map-pin" src="img/pin.svg" width="80px" height="140" alt="Мы здесь">
         <img src="img/map.jpg" width="1250" height="430" alt="Главный офис и оффлайн-магазин находятся по адресу Большая Конюшенная 19/8 в Санкт-Петербурге">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts">
-          Адрес главного офиса
-          и офлайн-магазина:
-            <span class="address">ул. Большая Конюшенная
-            19/8, Санкт-Петербург</span>
-            Для заказов по телефону:
-            <a class="phones-map" href="tel:88124502525">8 812 450-25-25</a>
-            (с 10 до 20 ежедневно)
-            <a class="button red-button" href="#modal">Форма обратной связи</a>
-        </p>
+        <div class="contacts">
+          <p class="address">Адрес главного офиса и офлайн-магазина:</p>
+          <p class="address-bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          <p class="address-phone">Для заказов по телефону:</p>
+          <a class="phones-map" href="tel:88124502525">8 812 450-25-25</a>
+          <p class="address-time">(с 10 до 20 ежедневно)</p>
+          <a class="button red-button" href="#modal">Форма обратной связи</a>
+        </div>
       </section>
     </main>
 
@@ -266,7 +264,7 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <input class="input-field" type="text" name="user-name" placeholder="Как вас зовут?">
         <input  class="input-field" type="email" name="user-email" placeholder="Ваша почта для ответа?">
-        <textarea name="message" rows="7" cols="50" placeholder="Напишите что-нибудь..."></textarea>
+        <textarea class="type-message" name="message" rows="7" cols="40" placeholder="Напишите что-нибудь..."></textarea>
         <input class="red-button" type="submit" name="feedback-submit">
       </form>
     </section>

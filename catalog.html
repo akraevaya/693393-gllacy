@@ -38,20 +38,22 @@
                     <a class="button" href="search.html"><span class="visually-hidden">Поиск по сайту</span></a>
                     <form class="search-form menu-popup" action="https://echo.htmlacademy.ru" method="get">
                         <input class="input-field" type="search" name="search-field" placeholder="Что ищем?">
-                        <input class="input-field" type="submit" class="visually-hidden">
+                        <input type="submit" class="visually-hidden">
                     </form>
                 </li>
                 <li class="user-menu menu-popup-link">
                     <a class="button" href="enter.html">Вход</a>
                     <form class="entrance-form menu-popup" action="https://echo.htmlacademy.ru" method="post">
-                        <input class="input-field" type="email" name="user-email" placeholder="Электронная почта">
-                        <input class="input-field" type="password" name="user-password" placeholder="Пароль">
-                        <div class="entrance-footer">
-                          <input class="red-button" type="submit" name="entrance-submit" value="Войти">
-                          <div class="entrance-footer-help">
-                            <a href="#">Забыли пароль?</a>
-                            <a href="#">Новая регистрация</a>
-                          </div>
+                        <div class="entrance-wrapper">
+                            <input class="input-field" type="email" name="user-email" placeholder="Электронная почта">
+                            <input class="input-field" type="password" name="user-password" placeholder="Пароль">
+                            <div class="entrance-footer">
+                                <input class="red-button" type="submit" name="entrance-submit" value="Войти">
+                                <div class="entrance-footer-help">
+                                    <a href="#">Забыли пароль?</a>
+                                    <a href="#">Новая регистрация</a>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </li>
@@ -135,9 +137,7 @@
                         <label class="checkbox-label"><input class="checkbox-button" type="checkbox" name="jam">джемы</label>
                     </div>
                 </div>
-                <div class="filter-item">
-                    <input class="filters-button" type="submit" name="filter-submit" value="Применить">
-                </div>
+                <input class="filters-button" type="submit" name="filter-submit" value="Применить">
             </form>
         </section>
 
@@ -242,13 +242,13 @@
                 </li>
             </ul>
             <ul class="pagination-list">
-                <li class="pagination-item pagination-item-prev"><a href="#"><span class="visually-hidden">Назад</span></a></li>
+                <li class="pagination-item"><a class="pagination-item-prev"><span class="visually-hidden">Назад</span></a></li>
                 <li class="pagination-item pagination-item-current"><a>1</a></li>
                 <li class="pagination-item"><a href="#">2</a></li>
                 <li class="pagination-item"><a href="#">3</a></li>
                 <li class="pagination-item"><a href="#">4</a></li>
                 <li class="pagination-item"><a href="#">5</a></li>
-                <li class="pagination-item pagination-item-next"><a href="#"><span class="visually-hidden">Вперёд</span></a></li>
+                <li class="pagination-item"><a class="pagination-item-next" href="#"><span class="visually-hidden">Вперёд</span></a></li>
             </ul>
         </section>
     </main>
