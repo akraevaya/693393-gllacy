@@ -222,8 +222,8 @@ img {
     font-weight: 400;
 }
 
-.sub-menu-item:hover,
-.sub-menu-item:focus {
+.sub-menu-item:not(.sub-menu-item-current):hover,
+.sub-menu-item:not(.sub-menu-item-current):focus {
     background-color: #fbded7;
 }
 
@@ -231,13 +231,21 @@ img {
     background-color: #f6b5a5;
 }
 
+.sub-menu-item-current {
+    background-color: #d07058;
+}
+
 .sub-menu-item a {
     color: #323232;
 }
 
-.sub-menu-item a:hover,
-.sub-menu-item a:active,
-.sub-menu-item a:focus {
+.sub-menu-item-current a {
+    color: #ffffff;
+}
+
+.sub-menu-item:not(.sub-menu-item-current) a:hover,
+.sub-menu-item:not(.sub-menu-item-current) a:active,
+.sub-menu-item:not(.sub-menu-item-current) a:focus {
     color: #e84d37;
 }
 
