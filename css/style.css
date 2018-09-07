@@ -947,6 +947,10 @@ img {
     border-radius: 50%;
 }
 
+.thumb-current {
+    background-color: #ffffff;
+}
+
 .thumb:hover,
 .thumb:focus {
     background-color: rgba(255, 255, 255, 0.5);
