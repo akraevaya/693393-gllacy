@@ -580,7 +580,7 @@ img {
 
 .filters {
     padding: 0;
-    margin-bottom: 18px;
+    margin-bottom: 19px;
 }
 
 .filters-form {
@@ -590,7 +590,7 @@ img {
     justify-content: space-between;
     align-items: center;
     width: 860px;
-    min-height: 150px;
+    min-height: 148px;
     margin: 0;
     padding: 0;
 }
@@ -601,6 +601,7 @@ img {
     flex-direction: column;
     justify-content: flex-end;
     min-height: 50px;
+    margin: 0;
     padding: 0;
 }
 
@@ -613,11 +614,11 @@ img {
 }
 
 .filter-item:nth-child(3) {
-    width: 420px;
+    width: 419px;
 }
 
 .filter-item:nth-child(4) {
-    width: 702px;
+    width: 700px;
 }
 
 .filter-item:last-child {
@@ -628,7 +629,7 @@ img {
     display: block;
     font-size: 14px;
     line-height: 16px;
-    padding-left: 16px;
+    padding-left: 15px;
     font-weight: 500;
     color: #ffffff;
 }
@@ -706,7 +707,7 @@ img {
 .scale {
     top: 50%;
     left: 23px;
-    width: 180px;
+    width: 175px;
     height: 3px;
     background-color: rgba(255, 255, 255, 0.5);
 }
@@ -748,9 +749,9 @@ img {
     align-items: center;
     height: 36px;
     margin-top: 6px;
-    margin-right: 10px;
+    margin-right: 5px;
     padding-left: 47px;
-    padding-right: 13px;
+    padding-right: 16px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 30px;
 }
@@ -850,7 +851,7 @@ img {
     font-weight: 500;
     margin: 0;
     margin-top: 20px;
-    padding: 8px 28px;
+    padding: 8px 29px;
     height: 36px;
     color: #ffffff;
     border: 2px solid #ffffff;
@@ -1163,7 +1164,7 @@ img {
 }
 
 .pagination-item {
-    margin-left: 3px;
+    margin-left: 4px;
     padding: 0;
     color: #ffffff;
 }
