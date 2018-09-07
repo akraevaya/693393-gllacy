@@ -192,7 +192,9 @@ img {
 .menu-current {
     background-color: #d07058;
     border-radius: 30px;
-    box-shadow: 0 0 0 10px #d07058;
+    box-shadow: 0 0 0 8px #d07058,
+                5px 0 0 8px #d07058,
+                -5px 0 0 8px #d07058;
 }
 
 .sub-menu {
