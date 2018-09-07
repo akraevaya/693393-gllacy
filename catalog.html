@@ -18,7 +18,7 @@
         </a>
         <ul class="site-navigation">
           <li class="menu menu-popup-link">
-            <a class="menu-current" href="#">Каталог</a>
+            <a class="menu-link menu-current" href="#">Каталог</a>
             <ul class="sub-menu menu-popup">
               <li class="sub-menu-item">
                 <a href="#">Новинки</a>
@@ -38,10 +38,10 @@
             </ul>
           </li>
           <li class="menu">
-            <a href="delivery.html">Доставка и оплата</a>
+            <a class="menu-link" href="delivery.html">Доставка и оплата</a>
           </li>
           <li class="menu">
-            <a href="about.html">О Компании</a>
+            <a class="menu-link" href="about.html">О Компании</a>
           </li>
         </ul>
       </nav>
@@ -130,13 +130,15 @@
       <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="filter-item">
           <label for="sorting" class="filter-name">Сортировка:</label>
-          <button class="popular">по популярности</button>
-          <select class="select" name="sort" id="sorting">
-            <option value="popular" selected>по популярности</option>
-            <option value="cheap">сначала недорогие</option>
-            <option value="expensive">сначала дорогие</option>
-            <option value="fat">по жирности</option>
-          </select>
+          <div class="select-wrapper">
+            <button class="popular"></button>
+            <select class="select" name="sort" id="sorting">
+              <option value="popular" selected>по популярности</option>
+              <option value="cheap">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
+          </div>
         </div>
         <div class="filter-item">
           <span class="filter-name">Цена: 100 руб. &mdash; 500 руб.</span>
