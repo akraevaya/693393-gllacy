@@ -179,6 +179,14 @@ img {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.menu > a:not(.menu-current):not(.menu-catalog):hover,
+.menu > a:not(.menu-current):not(.menu-catalog):focus,
+.menu > a:not(.menu-current):not(.menu-catalog):active {
+    color: #ffbc9e;
+    border-bottom: 1px solid #ffbc9e;
+}
+
+
 .menu-current {
     background-color: #d07058;
     border-radius: 30px;
