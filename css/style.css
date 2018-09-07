@@ -1376,10 +1376,10 @@ img {
     height: 100%;
 }
 
-.map-pin {
+.iframe {
     position: absolute;
     top: 0;
-    left: 250px;
+    display: block;
 }
 
 .map p {
@@ -1401,6 +1401,7 @@ img {
     padding: 28px 25px;
     background-color: #fdfefe;
     border-radius: 15px;
+    z-index: 5;
 }
 
 .contacts .address {
