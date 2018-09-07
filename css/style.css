@@ -639,7 +639,7 @@ img {
     line-height: 18px;
     font-weight: 500;
     height: 37px;
-    margin-top: 6px;
+    margin-top: 5px;
     padding-left: 16px;
     padding-top: 3px;
     text-align: left;
@@ -653,10 +653,10 @@ img {
 .popular::after {
     content: "";
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     right: 17px;
-    width: 11px;
-    height: 10px;
+    width: 9px;
+    height: 5px;
     background: url("../img/select-arrow.svg") no-repeat 0 0;
 }
 
@@ -672,19 +672,28 @@ img {
     padding: 0 12px;
     width: 193px;
     height: 36px;
-    color: #000000;
+    color: #323232;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 30px;
     border: none;
+}
+
+.select::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 9px;
+    height: 5px;
+    background: url("../img/select-arrow-black.svg") no-repeat 0 0;
 }
 
 .filter-item:first-child:hover .select {
     display: block;
 }
 
-.filter-item:first-child:hover:hover .popular,
-.filter-item:first-child:hover:focus .popular{
-    color: #323232;
+.filter-item:first-child:hover .select::after {
+    display: block;
 }
 
 .range-controls {
