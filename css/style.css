@@ -1134,12 +1134,12 @@ img {
     position: relative;
     display: flex;
     justify-content: flex-end;
-    margin-top: 58px;
+    margin-top: 60px;
     margin-bottom: 33px;
 }
 
 .pagination-item {
-    margin: 0;
+    margin-left: 3px;
     padding: 0;
     color: #ffffff;
 }
@@ -1154,7 +1154,7 @@ img {
 
 .pagination-item-prev {
     transform: rotate(180deg);
-    margin-right: 20px;
+    margin-right: 14px;
 }
 
 .pagination-item-next {
@@ -1171,7 +1171,7 @@ img {
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
-    padding: 5px;
+    padding: 4px;
     color: #ffffff;
     text-align: center;
     border-radius: 50%;
