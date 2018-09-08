@@ -789,7 +789,7 @@ img {
     content: "";
     position: absolute;
     top: -2px;
-    left: -30px;
+    left: -32px;
     width: 25px;
     height: 25px;
     opacity: 0.8;
@@ -838,7 +838,7 @@ img {
     content: "";
     position: absolute;
     top: 0;
-    left: -30px;
+    left: -34px;
     width: 25px;
     height: 23px;
     opacity: 0.8;
@@ -1108,9 +1108,9 @@ img {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.catalog-item:hover .catalog-item-title,
-.catalog-item:focus .catalog-item-title,
-.catalog-item:active .catalog-item-title {
+.catalog-item-title:hover,
+.catalog-item-title:focus,
+.catalog-item-title:active {
     color: #ffbc9e;
     border-bottom: 1px solid #ffbc9e;
 }
@@ -1420,6 +1420,7 @@ img {
     top: 0;
     left: -27px;
     width: 100%;
+    border: none;
 }
 
 .map p {
