@@ -240,6 +240,18 @@ img {
     background-color: #f6b5a5;
 }
 
+.sub-menu-item:first-child:hover,
+.sub-menu-item:first-child:focus,
+.sub-menu-item:first-child:active {
+    border-radius: 5px 5px 0 0;
+}
+
+.sub-menu-item:last-child:hover,
+.sub-menu-item:last-child:focus,
+.sub-menu-item:last-child:active {
+    border-radius: 0 0 5px 5px;
+}
+
 .sub-menu-item-current {
     background-color: #d07058;
 }
@@ -1400,7 +1412,7 @@ img {
     position: relative;
     width: 1200px;
     height: 430px;
-    margin: 0;
+    margin-left: -28px;
     margin-bottom: 3px;
     padding: 0;
 }
@@ -1408,7 +1420,7 @@ img {
 .map-bg {
     position: absolute;
     top: 0;
-    left: -27px;
+    right: 0;
     margin: 0;
     padding: 0;
     width: 1200px;
@@ -1418,7 +1430,7 @@ img {
 .iframe {
     position: absolute;
     top: 0;
-    left: -27px;
+    right: 0;
     width: 100%;
     border: none;
 }
@@ -1436,7 +1448,7 @@ img {
     display: block;
     position: absolute;
     bottom: 62px;
-    right: 56px;
+    right: 29px;
     width: 250px;
     height: 249px;
     padding: 28px 25px;
@@ -1622,10 +1634,11 @@ img {
 .modal {
     display: none;
     position: fixed;
-    top: 338px;
+    top: 50%;
     left: 50%;
     width: 427px;
     margin-left: -238px;
+    margin-top: -222px;
     padding: 16px 25px;
     padding-bottom: 0;
     background-color: #f8f7f4;
