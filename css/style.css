@@ -169,6 +169,7 @@ img {
     background-color: #f7f6f3;
     box-shadow: 0 0 0 10px #f7f6f3;
     border-radius: 10px;
+    border: none;
 }
 
 .menu {
@@ -235,7 +236,7 @@ img {
     background-color: #fbded7;
 }
 
-.sub-menu-item:active {
+.sub-menu-item:not(.sub-menu-item-current):active {
     background-color: #f6b5a5;
 }
 
@@ -861,12 +862,13 @@ img {
 }
 
 .filters-button {
+    align-self: flex-end;
     display: block;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 21px;
     padding: 8px 29px;
     height: 36px;
     color: #ffffff;
@@ -1074,6 +1076,10 @@ img {
 .catalog-item .hit {
     position: absolute;
     z-index: 10;
+}
+
+.catalog-item:hover .hit {
+    z-index: 12;
 }
 
 .catalog-item img {
@@ -1400,8 +1406,8 @@ img {
     padding: 0;
 }
 
-.map img {
-    margin: 0;
+.map-bg {
+    margin: 0 auto;
     padding: 0;
     height: 100%;
 }
@@ -1410,6 +1416,7 @@ img {
     position: absolute;
     top: 0;
     display: block;
+    margin: 0 auto;
 }
 
 .map p {
@@ -1482,8 +1489,7 @@ img {
 
 .main-footer {
     margin: 0;
-    padding-top: 20px;
-    padding-bottom: 28px;
+    padding: 0;
 }
 
 .social {
@@ -1521,7 +1527,7 @@ img {
 .footer-menu {
     display: flex;
     width: 350px;
-    padding-top: 27px;
+    padding-top: 26px;
 }
 
 .footer-menu-list {
@@ -1567,7 +1573,7 @@ img {
     display: flex;
     flex-direction: column;
     width: 190px;
-    min-height: 100px;
+    min-height: 84px;
     margin: 0;
     padding-left: 75px;
     padding-top: 15px;
