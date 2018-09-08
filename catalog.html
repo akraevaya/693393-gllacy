@@ -152,36 +152,56 @@
         <div class="filter-item">
           <span class="filter-name">Жирность:</span>
           <div class="fat-content">
-            <label class="radio-label">
-              <input class="radio-button" type="radio" name="fat-content-option" value="0">0%</label>
-            <label class="radio-label">
-              <input class="radio-button" type="radio" name="fat-content-option" value="under-10" checked>до 10%</label>
-            <label class="radio-label">
-              <input class="radio-button" type="radio" name="fat-content-option" value="under-30">до 30%</label>
-            <label class="radio-label">
-              <input class="radio-button" type="radio" name="fat-content-option" value="over-30">выше 30%</label>
+            <p class="radio-fat">
+              <input class="radio-button" type="radio" name="fat-content-option" value="0" id="0">
+              <label for="0" class="radio-label">0%</label>
+            </p>
+            <p class="radio-fat">
+                <input class="radio-button" type="radio" name="fat-content-option" value="0" id="10" checked>
+                <label for="10" class="radio-label">до 10%</label>
+            </p>
+            <p class="radio-fat">
+                <input class="radio-button" type="radio" name="fat-content-option" value="0" id="30">
+                <label for="30" class="radio-label">до 30%</label>
+            </p>
+            <p class="radio-fat">
+                <input class="radio-button" type="radio" name="fat-content-option" value="0" id="30more">
+                <label for="30more" class="radio-label">выше 30%</label>
+            </p>
           </div>
         </div>
 
         <div class="filter-item">
           <span class="filter-name">Наполнители:</span>
           <div class="filler">
-            <label class="checkbox-label">
-              <input class="checkbox-button" type="checkbox" name="chocolate" checked>шоколадные</label>
-            <label class="checkbox-label">
-              <input class="checkbox-button" type="checkbox" name="sugar" checked>сахарные присыпки</label>
-            <label class="checkbox-label">
-              <input class="checkbox-button" type="checkbox" name="fruit">фрукты</label>
-            <label class="checkbox-label">
-              <input class="checkbox-button" type="checkbox" name="syrup">сиропы</label>
-            <label class="checkbox-label">
-              <input class="checkbox-button" type="checkbox" name="jam">джемы</label>
+            <p class="checkbox-filler">
+              <input class="checkbox-button" type="checkbox" name="check" id="chocolate" checked>
+              <label for="chocolate" class="checkbox-label">шоколадные</label>
+            </p>
+            <p class="checkbox-filler">
+              <input class="checkbox-button" type="checkbox" name="check" id="sugar" checked>
+              <label for="sugar" class="checkbox-label">сахарные присыпки</label>
+            </p>
+            <p class="checkbox-filler">
+              <input class="checkbox-button" type="checkbox" name="check" id="fruit">
+              <label for="fruit" class="checkbox-label">фрукты</label>
+            </p>
+            <p class="checkbox-filler">
+              <input class="checkbox-button" type="checkbox" name="check" id="syrup">
+              <label for="syrup" class="checkbox-label">сиропы</label>
+            </p>
+            <p class="checkbox-filler">
+              <input class="checkbox-button" type="checkbox" name="check" id="jam">
+              <label for="jam" class="checkbox-label">джемы</label>
+            </p>
           </div>
         </div>
+
         <div class="filter-item">
           <label for="filter-submit-button" class="visually-hidden">Отправить форму</label>
           <input class="filters-button" type="submit" name="filter-submit" id="filter-submit-button" value="Применить">
         </div>
+
       </form>
     </section>
 
