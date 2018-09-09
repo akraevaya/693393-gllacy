@@ -51,18 +51,23 @@
             <span class="visually-hidden">Поиск по сайту</span>
           </a>
           <form class="search-form menu-popup" action="https://echo.htmlacademy.ru" method="get">
-            <input class="input-field" type="search" name="search-field" placeholder="Что ищем?">
-            <input type="submit" class="visually-hidden">
+            <label for="search-field-type" class="visually-hidden">Введите поисковый запрос</label>
+            <input class="input-field" type="search" name="search-field" id="search-field-type" placeholder="Что ищем?">
+            <label for="search-submit-button" class="visually-hidden">Найти</label>
+            <input type="submit" name="search-submit" id="search-submit-button" class="visually-hidden">
           </form>
         </li>
         <li class="user-menu menu-popup-link">
           <a class="button" href="enter.html">Вход</a>
           <form class="entrance-form menu-popup" action="https://echo.htmlacademy.ru" method="post">
             <div class="entrance-wrapper">
-              <input class="input-field" type="email" name="user-email" placeholder="Электронная почта">
-              <input class="input-field" type="password" name="user-password" placeholder="Пароль">
+              <label for="user-email-field" class="visually-hidden">Введите вашу электронную почту</label>
+              <input class="input-field" type="email" name="user-email" id="user-email-field" placeholder="Электронная почта">
+              <label for="user-password-field" class="visually-hidden">Введите ваш пароль</label>
+              <input class="input-field" type="password" name="user-password" id="user-password-field" placeholder="Пароль">
               <div class="entrance-footer">
-                <input class="red-button" type="submit" name="entrance-submit" value="Войти">
+                <label for="entrance-submit-button" class="visually-hidden">Войти</label>
+                <input class="red-button" type="submit" name="entrance-submit" id="entrance-submit-button" value="Войти">
                 <div class="entrance-footer-help">
                   <a href="#">Забыли пароль?</a>
                   <a href="#">Новая регистрация</a>

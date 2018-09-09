@@ -51,18 +51,23 @@
             <span class="visually-hidden">Поиск по сайту</span>
           </a>
           <form class="search-form menu-popup" action="https://echo.htmlacademy.ru" method="get">
-            <input class="input-field" type="search" name="search-field" placeholder="Что ищем?">
-            <input type="submit" class="visually-hidden">
+            <label for="search-field-type" class="visually-hidden">Введите поисковый запрос</label>
+            <input class="input-field" type="search" name="search-field" id="search-field-type" placeholder="Что ищем?">
+            <label for="search-submit-button" class="visually-hidden">Найти</label>
+            <input type="submit" name="search-submit" id="search-submit-button" class="visually-hidden">
           </form>
         </li>
         <li class="user-menu menu-popup-link">
           <a class="button" href="enter.html">Вход</a>
           <form class="entrance-form menu-popup" action="https://echo.htmlacademy.ru" method="post">
             <div class="entrance-wrapper">
-              <input class="input-field" type="email" name="user-email" placeholder="Электронная почта">
-              <input class="input-field" type="password" name="user-password" placeholder="Пароль">
+              <label for="user-email-field" class="visually-hidden">Введите вашу электронную почту</label>
+              <input class="input-field" type="email" name="user-email" id="user-email-field" placeholder="Электронная почта">
+              <label for="user-password-field" class="visually-hidden">Введите ваш пароль</label>
+              <input class="input-field" type="password" name="user-password" id="user-password-field" placeholder="Пароль">
               <div class="entrance-footer">
-                <input class="red-button" type="submit" name="entrance-submit" value="Войти">
+                <label for="entrance-submit-button" class="visually-hidden">Войти</label>
+                <input class="red-button" type="submit" name="entrance-submit" id="entrance-submit-button" value="Войти">
                 <div class="entrance-footer-help">
                   <a href="#">Забыли пароль?</a>
                   <a href="#">Новая регистрация</a>
@@ -228,7 +233,8 @@
             <label for="subscribe-field">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
             не спамить и не слать всякой ненужной ерунды. Честно =)</label>
             <input class="input-field subscribe-email" type="email" name="subscribe" id="subscribe-field" placeholder="Электронная почта">
-            <input class="red-button" type="submit" name="subscribe-submit" value="Отправить">
+            <label for="subscribe-submit-button" class="visually-hidden">Подписаться на рассылку</label>
+            <input class="red-button" type="submit" name="subscribe-submit" id="subscribe-submit-button" value="Отправить">
           </form>
         </div>
       </section>
@@ -245,7 +251,7 @@
         <p class="address-time">(с 10 до 20 ежедневно)</p>
         <a class="button red-button" href="#modal">Форма обратной связи</a>
       </div>
-      <iframe class="iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A254cd06a2d6d0cc8e966ca3419a14124dc08a67dcf9210e977d4b99599e77bc4&amp;source=constructor" width="1200" height="430"></iframe>
+      <iframe class="iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A254cd06a2d6d0cc8e966ca3419a14124dc08a67dcf9210e977d4b99599e77bc4&amp;source=constructor" width="100%" height="430" frameborder="0"></iframe>
     </section>
   </main>
 
@@ -332,10 +338,14 @@
     <p>Мы обязательно вам ответим!</p>
     <button class="modal-close" type="button">Закрыть</button>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <input class="input-field input-field-modal" type="text" name="user-name" placeholder="Как вас зовут?">
-      <input class="input-field input-field-modal" type="email" name="user-email" placeholder="Ваша почта для ответа?">
-      <textarea class="type-message" name="message" placeholder="Напишите что-нибудь..."></textarea>
-      <input class="red-button" type="submit" name="feedback-submit" value="Отправить">
+      <label for="user-name-field" class="visually-hidden">Как вас зовут</label>
+      <input class="input-field input-field-modal" type="text" name="user-name" id="user-name-field" placeholder="Как вас зовут?">
+      <label for="user-email-field" class="visually-hidden">Ваша почта для ответа</label>
+      <input class="input-field input-field-modal" type="email" name="user-email" id="user-email-field" placeholder="Ваша почта для ответа?">
+      <label for="message-field" class="visually-hidden">Напишите сообщение</label>
+      <textarea class="type-message" name="message" id="message-field" placeholder="Напишите что-нибудь..."></textarea>
+      <label for="feedback-submit-button" class="visually-hidden">Отправить сообщение</label>
+      <input class="red-button" type="submit" name="feedback-submit" id="feedback-submit-button" value="Отправить">
     </form>
   </section>
 
