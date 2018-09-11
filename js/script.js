@@ -25,7 +25,7 @@ try {
 feedback.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
-  overlay.classList.add("modal-show");
+  overlay.classList.add("modal-show-overlay");
 
   if (storage) {
     userName.value = storage;
@@ -39,13 +39,14 @@ feedback.addEventListener("click", function(evt) {
 close.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
-  overlay.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
+  overlay.classList.remove("modal-show-overlay");
 });
 
 form.addEventListener("submit", function(evt) {
   if (!userName.value || !email.value || !message.value) {
     evt.preventDefault();
-    console.log("Нужно ввести логин и пароль");
+    popup.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("userName", userName.value);
@@ -57,8 +58,10 @@ form.addEventListener("submit", function(evt) {
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (popup.classList.contains("modal-show")) {
+    if (popup.classList.contains("modal-show" || "modal-show-overlay")) {
       popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
+      overlay.classList.remove("modal-show-overlay");
     }
   }
 });
