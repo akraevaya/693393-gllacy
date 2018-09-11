@@ -1106,7 +1106,7 @@ img {
 .gift-item {
     position: relative;
     width: 520px;
-    height: 200px;
+    min-height: 200px;
     margin: 0;
     padding: 15px 20px;
     border-radius: 15px;
@@ -1761,7 +1761,7 @@ img {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.modal {
+.modal-feedback {
     display: none;
     position: fixed;
     top: 50%;
@@ -1788,7 +1788,7 @@ img {
     cursor: pointer;
 }
 
-.modal p {
+.modal-feedback p {
     margin: 0;
     padding: 0;
     font-size: 24px;
@@ -1837,7 +1837,7 @@ img {
     margin-top: 20px;
 }
 
-.modal .red-button {
+.modal-feedback .red-button {
     display: block;
     float: right;
     padding: 10px 20px;
@@ -1852,4 +1852,8 @@ img {
     height: 100%;
     z-index: 1;
     background: rgba(0, 0, 0, 0.3);
+}
+
+.modal-show {
+    display: block;
 }

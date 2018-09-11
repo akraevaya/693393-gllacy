@@ -6,7 +6,7 @@
   <title>Gllacy: Главная</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -249,7 +249,7 @@
         <p class="address-phone">Для заказов по телефону:</p>
         <a class="phones-map" href="tel:88124502525">8 812 450-25-25</a>
         <p class="address-time">(с 10 до 20 ежедневно)</p>
-        <a class="button red-button" href="#modal">Форма обратной связи</a>
+        <a class="button red-button feedback-link" href="feedback.html">Форма обратной связи</a>
       </div>
       <iframe class="iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A254cd06a2d6d0cc8e966ca3419a14124dc08a67dcf9210e977d4b99599e77bc4&amp;source=constructor" width="1200" height="430"></iframe>
     </section>
@@ -333,7 +333,7 @@
     </div>
   </footer>
 
-  <section class="modal">
+  <section class="modal modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <p>Мы обязательно вам ответим!</p>
     <button class="modal-close" type="button">Закрыть</button>
@@ -349,7 +349,9 @@
     </form>
   </section>
 
-  <div class="modal-overlay"></div>
+  <div class="modal modal-overlay"></div>
+
+  <script src="js/script.js"></script>
 
 </body>
 
